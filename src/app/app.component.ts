@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'QalaabV4';
+  selected = 'dashboard';
+  fromWelcome: string ='true';
+
+  onVariableChanged(variable: string) {
+    this.fromWelcome = variable;
+  }
 }
