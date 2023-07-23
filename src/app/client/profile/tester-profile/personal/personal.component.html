@@ -1,25 +1,23 @@
-<form>
-    <div class="attach-profile d-flex">
-        <img src="../../../../../assets/Profile.png" alt="">
-        <label for="myfile">Select a file:</label>
-        <div class="input-group mb-3">
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile02">
-              <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-            </div>
-            <div class="input-group-append">
-              <span class="input-group-text" id="">Upload</span>
-            </div>
-          </div>
-          
-    </div>
-    <div>
-        <label for="first-name"></label>
-        <input type="text" name="first-name" id="first-name">
-        <label for="last-name"></label>
-        <input type="text" name="last-name" id="last-name">
-        <input type="date">
-    </div>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+<form class="m-5 d-flex">
+  <div class="card">
+    <img src="../../assets/Profile.png" alt="">
+    <input type="file" id="picture" name="picture" accept="image/*" capture="camera" style="display: none;">
+    <!-- Custom button label -->
+    <label for="picture" class="upload">
+      UPLOAD
+    </label>
+  </div>
+  <div class="card">
+    <li><input type="text" placeholder=""></li>
+    <li><input type="text"></li>
+    <li>    </li>
+    <li class="d-flex">
+      <input type="radio" id="male" name="fav_language" value="male">
+      <label for="html" class="mt-2">Male</label><br>
+      <input type="radio" id="female" name="fav_language" value="female">
+      <label for="css" class="mt-2">Female</label><br>
+    </li>
+    <li><input type="email"></li>
+  </div>
+  <div class="card"></div>
 </form>
-  

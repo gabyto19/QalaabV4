@@ -1,9 +1,29 @@
-.attach-profile{
+form {
+    justify-content: space-around;
+    height: -webkit-fill-available;
     align-items: center;
+
 }
-.input-group{
-    width: 25%;
+
+.card {
+    width: 30%;
+    height: 400px;
+    background-color: #D4D7E8;
 }
-.custom-file-label{
-    height: 35px;
+
+.upload {
+    cursor: pointer;
+    background-color: #9CA5C4;
+    width: 135px;
+    margin: auto;
+    text-align: center;
+    height: 55px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 45px;
+}
+form img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
 }
