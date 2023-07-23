@@ -10,6 +10,8 @@ import { ProfileComponent } from './dashboard-page/profile/profile.component';
 import { TestCyclesComponent } from './projects/test-cycles/test-cycles.component';
 import { IssuesComponent } from './projects/issues/issues.component';
 import { TestCasesComponent } from './projects/test-cases/test-cases.component';
+import { TesterProfileComponent } from './profile/tester-profile/tester-profile.component';
+import { PersonalComponent } from './profile/tester-profile/personal/personal.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { TestCasesComponent } from './projects/test-cases/test-cases.component';
        ProfileComponent,
        TestCyclesComponent,
        IssuesComponent,
-       TestCasesComponent
+       TestCasesComponent,
+       TesterProfileComponent,
+       PersonalComponent
   ],
   imports: [
     CommonModule,

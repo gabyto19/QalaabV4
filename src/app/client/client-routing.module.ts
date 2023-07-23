@@ -5,13 +5,15 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { IssuesComponent } from './projects/issues/issues.component';
 import { TestCyclesComponent } from './projects/test-cycles/test-cycles.component';
 import { TestCasesComponent } from './projects/test-cases/test-cases.component';
+import { TesterProfileComponent } from './profile/tester-profile/tester-profile.component';
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardPageComponent},
-  {path:'courses',component:CoursesPageComponent},
-  {path:'issues',component:IssuesComponent},
-  {path:'test-cases',component:TestCyclesComponent},
-  { path :'test-cycles' ,component:TestCyclesComponent },
+  { path: 'dashboard', component: DashboardPageComponent },
+  { path: 'courses', component: CoursesPageComponent },
+  { path: 'issues', component: IssuesComponent },
+  { path: 'test-cases', component: TestCasesComponent },
+  { path: 'test-cycles', component: TestCyclesComponent },
+  { path: 'tester-profile', component: TesterProfileComponent }
 
 ];
 
