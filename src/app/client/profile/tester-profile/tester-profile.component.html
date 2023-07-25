@@ -3,8 +3,8 @@
         <div class="list-unstyled d-flex justify-content-between">
             <li [ngClass]="{ 'invitation-nav': dashOption =='personal'}" (click)="chooseDashboard('personal')">Personal</li>
             <li [ngClass]="{ 'invitation-nav': dashOption =='devices'}" (click)="chooseDashboard('devices')">Devices</li>
-            <li [ngClass]="{ 'invitation-nav': dashOption =='payment'}" (click)="chooseDashboard('payment')">Payment Testing</li>
-            <li [ngClass]="{ 'invitation-nav': dashOption =='subscriptions'}" (click)="chooseDashboard('subscriptions')">Subscriptions</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='payment'}" (click)="chooseDashboard('payment')">Payment and Subscriptions</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='subscriptions'}" (click)="chooseDashboard('subscriptions')">Statistic</li>
         </div>
         <div [ngSwitch]="dashOption">
             <div *ngSwitchCase="'personal'" class="log-div pt-3">
@@ -12,13 +12,13 @@
             </div>
 
             <div *ngSwitchCase="'devices'" class="log-div pt-3">
-                
+                <app-devices></app-devices>
             </div>
             <div *ngSwitchCase="'payment'" class="log-div pt-3">
-               
+               <app-pay-sub></app-pay-sub>
             </div>
             <div *ngSwitchCase="'subscriptions'" class="log-div pt-3">
-                
+                <app-statistic></app-statistic>
             </div>
         </div>
     </div>

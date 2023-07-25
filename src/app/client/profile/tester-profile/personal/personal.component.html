@@ -7,17 +7,30 @@
       UPLOAD
     </label>
   </div>
-  <div class="card">
-    <li><input type="text" placeholder=""></li>
-    <li><input type="text"></li>
-    <li>    </li>
-    <li class="d-flex">
-      <input type="radio" id="male" name="fav_language" value="male">
-      <label for="html" class="mt-2">Male</label><br>
-      <input type="radio" id="female" name="fav_language" value="female">
-      <label for="css" class="mt-2">Female</label><br>
+  <div class="card second-card">
+    <li><input type="text" placeholder="First Name" class="input-prop"></li>
+    <li><input type="text" placeholder="Last Name" class="input-prop"></li>
+    <li><input type="email" placeholder="E-Mail" class="input-prop"></li>
+    <li> <input type="date" class="input-prop" style="padding: 20px;color: #8E8E8E;"></li>
+    <li class="d-flex bg-white pl input-prop">
+      <h2 style="font-weight: 400;">Gender</h2>
+      <div>
+        <div>
+          <input type="radio" id="male" name="fav_language" value="male">
+          <label for="html" class="mt-2" style="font-weight: 400;">Male</label><br>
+        </div>
+        <div>
+          <input type="radio" id="female" name="fav_language" value="female">
+          <label for="css" class="mt-2" style="font-weight: 400;">Female</label><br>
+        </div>
+      </div>
     </li>
-    <li><input type="email"></li>
   </div>
-  <div class="card"></div>
+  <div class="card second-card">
+    <li><input type="number" class="input-prop" placeholder="Phone Number"></li>
+    <li><input type="dropdown" class="input-prop" placeholder="Country"></li>
+    <li><input type="text" class="input-prop" placeholder="City"></li>
+    <li><input type="number" class="input-prop" placeholder="Postal Code"></li>
+    <li><input type="dropdown" class="input-prop" placeholder="Languages"></li>
+  </div>
 </form>
