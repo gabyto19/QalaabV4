@@ -1,0 +1,30 @@
+.left{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+}
+.right{
+    width: 50%;
+    margin-top: 10%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.right div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.profile-pic{
+    height: 150px;
+    width: 150px;
+    background: red;
+    border-radius: 10em;
+    margin-bottom: 50px;
+}
+h2{
+    line-height: 0px;
+}

@@ -28,9 +28,10 @@ form {
     line-height:0em;
 }
 .left{
-    justify-content: space-between;
-    height: 200px;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 245px;
 }
 .left input{
     height: 50px;

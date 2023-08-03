@@ -22,7 +22,8 @@ import { DevicesComponent } from './profile/tester-profile/devices/devices.compo
 import { PaySubComponent } from './profile/tester-profile/pay-sub/pay-sub.component';
 import { StatisticComponent } from './profile/tester-profile/statistic/statistic.component';
 import { NgApexchartsModule } from "ng-apexcharts";
-
+import { TesterStatisticComponent } from './profile/tester-statistic/tester-statistic.component';
+import { AboutComponent } from './profile/tester-statistic/about/about.component';
 
 
 
@@ -40,7 +41,9 @@ import { NgApexchartsModule } from "ng-apexcharts";
     PersonalComponent,
     DevicesComponent,
     PaySubComponent,
-    StatisticComponent
+    StatisticComponent,
+    TesterStatisticComponent,
+    AboutComponent
   ],
   imports: [
     NgApexchartsModule,

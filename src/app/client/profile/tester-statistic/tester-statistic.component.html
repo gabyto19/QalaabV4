@@ -1,0 +1,30 @@
+<div class="main-div">
+    <div class="dashboard-div">
+        <div class="list-unstyled d-flex justify-content-between">
+            <li [ngClass]="{ 'invitation-nav': dashOption =='about'}" (click)="chooseDashboard('about')">About me</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='articles'}" (click)="chooseDashboard('articles')">Articles</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='status'}" (click)="chooseDashboard('status')">Status Updates</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='comments'}" (click)="chooseDashboard('comments')">Comments</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='mentions'}" (click)="chooseDashboard('mentions')">Mentions</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='topics'}" (click)="chooseDashboard('topics')">Topics</li>
+            <li [ngClass]="{ 'invitation-nav': dashOption =='likes'}" (click)="chooseDashboard('likes')">Likes</li>
+        </div>
+        <div [ngSwitch]="dashOption">
+            <div *ngSwitchCase="'about'" class="log-div pt-3">
+                <app-about></app-about>
+            </div>
+            <div *ngSwitchCase="'articles'" class="log-div pt-3">
+            </div>
+            <div *ngSwitchCase="'status'" class="log-div pt-3">
+            </div>
+            <div *ngSwitchCase="'comments'" class="log-div pt-3">
+            </div>
+            <div *ngSwitchCase="'mentions'" class="log-div pt-3">
+            </div>
+            <div *ngSwitchCase="'topics'" class="log-div pt-3">
+            </div>
+            <div *ngSwitchCase="'likes'" class="log-div pt-3">
+            </div>
+        </div>
+    </div>
+</div>
